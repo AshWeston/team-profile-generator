@@ -25,5 +25,5 @@ test("test if we can get the office number from getOfficeNumber() method", () =>
 });
 
 test("test if we can get the role from getRole() method", () => {
-  expect(manager.getRole()).toBe("Manager");
+  expect(manager.getRole()).toEqual("Manager");
 });
