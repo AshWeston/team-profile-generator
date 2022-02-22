@@ -2,7 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
 const generateSite = require("./src/generate-site.js");
-const OUTPUT_DIR = path.resolve(__dirname, "output");
+const OUTPUT_DIR = path.resolve(__dirname, "dist");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const Manager = require("./lib/Manager");
@@ -95,7 +95,7 @@ const promptMenu = () => {
     ])
     .then((userChoice) => {
       switch (userChoice.menu) {
-        case "Add an engineer":
+        case "Add an Engineer":
           promptEngineer();
           break;
         case "Add an intern":
