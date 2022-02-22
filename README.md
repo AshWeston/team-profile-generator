@@ -35,6 +35,8 @@ This application uses Jest for running the unit tests and Inquirer for collectin
 
 ## Video-Walkthrough
 
+[Walk-Through] (https://drive.google.com/file/d/1Emu1zAqNw2EXK1UDniHrtAwyRDsXjI6M/view)
+
 ## Contributing
 
 You can contribute to this project by cloning this repository and commiting your code on a new branch.
