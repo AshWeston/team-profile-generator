@@ -31,7 +31,7 @@ This application uses Jest for running the unit tests and Inquirer for collectin
 - Once completed, you can decide to add other team members using the arrow keys. You can choose to add either an engineer, an intern, or to finalise your team.
 - Once you have added your team members, and finalised your team, your team will be generated in an HTML file
 
-![Team HTML](teamhtml.jpg)
+![Team HTML](teamhtml.JPG)
 
 ## Video-Walkthrough
 
@@ -43,7 +43,7 @@ You can contribute to this project by cloning this repository and commiting your
 
 Tested using Jest - https://www.npmjs.com/package/jest
 
-![Jest Test](test.jpg)
+![Jest Test](test.JPG)
 
 ## Technologies
 
