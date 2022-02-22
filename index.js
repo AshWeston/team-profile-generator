@@ -1,6 +1,9 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
+const generateSite = require("./src/generate-site.js");
+const OUTPUT_DIR = path.resolve(__dirname, "output");
+const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
@@ -251,5 +254,11 @@ const promptIntern = () => {
 const buildTeam = () => {
   console.log(`
     *****Finish Building My Team*****`);
-  //  finish code in here/
+
+  if (!fs.existsSync(OUTPUT_DIR)) {
+    fs.mkdirSync(OUTPUT_DIR);
+  }
+  fs.writeFileSync(outputPath, generateSite(teamMembers), "utf-8");
 };
+
+promptManager();
